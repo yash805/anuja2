@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+// setTimeout and setInterval
+
+// setTimeout: run function one time after interval of time
+
+// setInterval: run function repeteadly , starting after the interval of time, then repetaing
+
+// setTimeout(function(){
+
+// },delay,arg1,arg2.....)
+
+// setTimeout(function(a,b){
+//     console.log("hello"+a +b)
+// },2000,10,5) //2000ms = 2sec
+
+// function greet(){
+//     let a = 5+10;
+//     console.log(a);
+// }
+
+// setInterval(greet,3000);
+
+// function print(){
+//     let get = 0;
+//     const set = setInterval(function(){
+//         console.log("hello");
+//         get++;
+//         if(get === 5){
+//             clearInterval(set);
+//         }
+//     },1000)
+// }
+// print();
+
+let get = 1000;
+
+const set = ()=>{
+    console.log("hello")
+    get *= 2;
+    setTimeout(set, get);
+}
+ set();
+
+
+    </script>
+</body>
+</html>

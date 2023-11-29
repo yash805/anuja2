@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+   
+    //  let car = {
+    //     company:"tata",
+    //     price:20,
+    //     color:"black"
+    //  }
+
+    //  console.log(car);
+
+    //  aceess the objects properties
+
+    // console.log(car["company"]);
+
+    // console.log(car.price);
+
+    // modify the object
+
+    // car.color = "red";
+    // console.log(car);
+    // console.log(car.color);
+
+
+    // Delete properties
+
+    //   delete car.price
+
+    //   console.log(car);
+
+    // let car = {
+    //     company:"tata",
+    //     price:20,
+    //     color:"black",
+    //     age: function(){
+    //         console.log("hello");
+    //     }
+    //  }
+    //  console.log(car);
+    //  car.age();
+
+    // let age = {
+    //     person: function(){
+
+    //     }
+    // }
+
+    // this keyword
+
+    let set ={
+        name:"yash",
+        lname:"kumar"
+    }
+
+
+    let car = {
+        company:"tata",
+        price:20,
+        color:"black",
+        age: function(){
+            return `${this.company} ${this.price}`
+        }
+     }
+
+
+     
+
+     console.log(car.age());
+    </script>
+</body>
+</html>

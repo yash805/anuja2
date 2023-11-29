@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // Control flow
+        // for loop
+        // for(let i=0; i<=5; i++){
+        //   console.log("hello",i)
+        // }
+
+        // let set = [1,2,3,4,5]
+        // let sum =0;
+        // for(let i=0; i<set.length;i++){
+        //      sum = sum + set[i];
+        // }
+        // console.log((sum));
+
+
+      let arr = [23,56,4,78,63,56]
+
+      function set(a,b){
+          for(let i= 0; i< a.length; i++){
+            if(a[i] === b){
+                a.splice(i, 1);
+            }
+          }
+          return a;
+      }
+     console.log(set(arr,56));
+       
+
+    </script>
+</body>
+</html>
